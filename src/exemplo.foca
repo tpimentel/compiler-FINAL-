@@ -1,0 +1,56 @@
+VI MAIN()
+{
+	//Comentario uma linha
+	/*
+		Comentario
+		multiplas
+		linhas
+	*/
+
+	//VI - inteiros
+	VI i = 10;
+	VI j;
+	j = 4;
+	VI h = 14*14+(14-2); 
+	//VF - float
+	//VD - double
+	//VL - long
+
+	//VB - boolean
+	VB opcao1 = TRUE;
+	VB opcao2 = FALSE;
+
+
+	//VS - string
+	VS string1 = "Casa ";
+	VS string2 = "e muito";
+	VS string3 = " cara";
+	VS stringConcat = string1 + string2 + string3;
+
+	IF(opcao1){
+		IN i;
+	} ELIF (string1 == "e muito"){
+		OUT stringConcat;
+	} ELIF (string2 == "Casa "){
+		OUT "Entrei no ELIF";
+	}ELSE {
+		VS stringNew = "nova string";
+		stringConcat = stringNew;
+	}
+
+	VI minhaSoma = 1;
+	WHILE(opcao1){
+		minhaSoma++;
+		OUT minhaSoma;
+
+		IF(minhaSoma == 10){
+			opcao1 = opcao2;
+		}
+
+	}
+
+	FOR(VI cont = 0; cont < 20; cont++){
+		OUT  cont;
+	}
+
+}
